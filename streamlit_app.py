@@ -18,5 +18,5 @@ my_fruit_list = pandas.read_csv('https://uni-lab-files.s3.us-west-2.amazonaws.co
 
 
 #let us put a multi select here so they can pick the fruit they want to include 
-streamlit.multiselect("pick some fruits:",list(my_fruits_list.index))
+streamlit.multiselect("pick some fruits:",list(my_fruit_list.index))
 streamlit.dataframe(my_fruit_list)
